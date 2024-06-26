@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estylos.css">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .navbar-custom {
+            background-color: #36a799; 
+        }
+        .sidebar {
+            height: 100vh;
+            border-right: 1px solid #f8f8f8;
+          
+        }
+        .messages {
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+        .message-input {
+            padding: 10px;
+            background-color: #d5dfd8;
+            border-top: 1px solid #d7e5e7;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <span class="navbar-brand mb-0 h1">WhatsApp Web </span>
+    </nav>
+    <div class="col-4 sidebar">
+            <div class="messages flex-grow-1">
+                <div class="message mb-2 p-2 rounded bg-white">Mensaje 1</div>
+                <div class="message mb-2 p-2 rounded bg-white">Mensaje 2</div>
+                <div class="message-input d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                    <button class="btn btn-success ml-2">Enviar</button>
+                </div>
+</body>
+</html>

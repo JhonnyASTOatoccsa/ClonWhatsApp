@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web Clone</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .sidebar {
+            height: 100vh;
+            border-right: 1px solid #00ee00;
+            background-color: #0164c7;
+        }
+        .chat {
+            height: 100vh;
+            background-color: #ff8800;
+        }
+        .messages {
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #f80441;
+        }
+        .message-input {
+            padding: 10px;
+            background-color: #e97979;
+            border-top: 1px solid #2dcbe7;
+        }
+        .message-input input {
+            border: none;
+            border-radius: 20px;
+            width: 90%;
+        }
+        .message-input button {
+            background-color: #d31088;
+            color: rgb(12, 5, 5);
+            border: none;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 sidebar">
+                <div class="d-flex flex-column h-100">
+                    <div class="p-3 bg-light border-bottom">
+                        <h5 class="mb-0">Perfil</h5>
+                    </div>
+                    <div class="flex-grow-1 overflow-auto">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Contacto 1</a>
+                            <a href="#" class="list-group-item list-group-item-action">Contacto 2</a>
+                            <a href="#" class="list-group-item list-group-item-action">Contacto 3</a>
+                            <!-- Añade más contactos según sea necesario -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 chat d-flex flex-column">
+                <div class="messages flex-grow-1">
+                    <div class="message mb-2 p-2 rounded bg-white">Mensaje 1</div>
+                    <div class="message mb-2 p-2 rounded bg-white">Mensaje 2</div>
+                    <!-- Añade más mensajes según sea necesario -->
+                </div>
+                <div class="message-input d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                    <button class="btn btn-success ml-2">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
